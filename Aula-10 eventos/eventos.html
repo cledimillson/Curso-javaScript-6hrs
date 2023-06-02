@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: blanchedalmond;
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <h1>Aprendendo javascript</h1>
+    <h2>Eventos Javascript</h2>
+    <p id="text"></p>
+
+    <button onclick="eventoClick()">(onclick) -> Disparado quando recebe um click</button> <br><br>
+    
+    <button ondblclick="eventoDblClick()">(ondblclick) -> Disparado quando clique duplo</button> <br><br>
+
+    <button onmouseover="eventoOverClick()">(onmouseseover) -> Dispara quando o mouse está sobre</button> <br><br>
+
+    <button onmouseout="eventoOutClick()">(onmouseout) -> Dispara quando o mouse é movido para fora do elemento</button> <br><br>
+
+    <button onmousemove="eventoMoveClick()">(onmousemove) -> Dispara quando o mouse é movido no elemento.
+    </button> <br><br>
+
+    <button onmousedown="eventodowClick()">(onmousedown) Disparado quando clique do botão for presionado</button> <br><br>
+
+    <button onmouseup="eventoUpClick()">(onmouseup) Disparado quando o clique do mouse é liberado</button> <br><br>
+
+    <button onfocus="eventoFocusClick()">(onfocus) Disparado quando o elemento recebe o foco, Válido para input</button><br><br>
+
+    <button onchange="eventochangeClick()">(onchange) Disparado quando existe uma mudança no conteudo, "Ao mudar"</button><br><br>
+
+    <button onblur="eventoOnblurClick()">(onblur) Disparado quando o elemento perde o foco</button><br><br>
+
+    <button onkeydown="eventokeyClick()">(onkeydown) Disparado quando uma tecla e presionada</button><br><br>
+
+    <button onkeypress="eventokeypressClick()">(onkeypress) Disparada quando uma tecla e presionada e solta</button><br><br>
+
+    <button onkeyup="eventoKeyUpClick()">(onkeyup) Disparado quando uma tecla e solta sobre um elento</button><br><br>
+    
+    <button onload="eventoLoadClick()">(onload) disparado quando a página terminou de ser carregada. body</button><br><br>
+
+    <button onresize="eventoOnSizeClick()">(onresize) disparda quando há um redicionamento da janela</button><br><br>
+
+    <script src="eventos.js"></script>
+</body>
+</html>
