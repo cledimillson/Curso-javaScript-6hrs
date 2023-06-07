@@ -10,3 +10,10 @@ especificados.
 
 */
 
+function ativarContagem() {
+    document.getElementById('tempo').innerHTML = "Comecou a contar!";
+    // Ativa a função apenas 1 vez quando der o tempo especificado.
+    setTimeout(function () {
+        document.body.style.backgroundColor = "red";
+    }, 1000);
+}
