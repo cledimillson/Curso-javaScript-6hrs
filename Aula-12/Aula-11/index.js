@@ -13,8 +13,17 @@ posição dentro dele.
     -- E assim por diante.
 */
 
-const pessoa = ["Dimitri", "Santos", 30, "Professor"]; //array
+const pessoa = ["Dimitri", "Santos", 40, "Professor"]; //array
+
+const numeros = [40, 100, 1, 5, 25, 10];
+const maior20 = numeros.filter(filtragem);
 
 //alert(Array.isArray(pessoa));
 
-document.getElementById("Teste").innerHTML = pessoa;
+//document.getElementById("Teste").innerHTML = pessoa;
+
+document.getElementById("Teste").innerHTML = maior20;
+
+functionfiltragem(value, index, Array) {
+    return value > 20;
+}
