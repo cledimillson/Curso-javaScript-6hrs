@@ -15,7 +15,7 @@ function addTarefa() {
 
         let novoItem = `<div id="${contador}" class="item">
         <div onclick="marcarTarefa(${contador})" class="item-icone">
-            <i id="icon_${contador}" class="mdi mdi-circle-outline"></i>
+            <i id="icone_${contador}" class="mdi mdi-circle-outline"></i>
 
         </div>
         <div onclick="marcarTarefa(${contador})" class="item-nome">
@@ -43,7 +43,8 @@ function deletar(id) {
 
 function marcarTarefa(id) {
     var item = document.getElementById(id);
-    var classe = item.getAttribute('classe');
+    var classe = item.getAttribute('class');
+    console.log(classe);
 
     if (classe == "item") {
         item.classList.add('clicado');
